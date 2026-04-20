@@ -25,9 +25,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
-          cache-dependency-path: ./前端/package-lock.json
-      - run: npm ci
+      - run: npm install
       - run: npm run build
         env:
           GITHUB_ACTIONS: 'true'
