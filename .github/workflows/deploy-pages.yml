@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./C0420
+        working-directory: ./C0420/前端
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -32,7 +32,7 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: ./C0420/dist
+          path: ./C0420/前端/dist
 
   deploy:
     runs-on: ubuntu-latest
