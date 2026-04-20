@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import { roleDefaultPath } from '../data/mock'
 import { useAuthStore } from '../stores/auth'
 import Login from '../views/Login.vue'
