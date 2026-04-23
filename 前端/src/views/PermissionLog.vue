@@ -50,7 +50,7 @@ const menuOptions = ['工作台', '案件管理', '期限预警', '文书校验'
 const permissionRows = ref([
   { role: '检察官', menus: ['案件管理', '期限预警'], locked: true },
   
-  { role: '案件管理办公室', menus: ['工作台', '案件管理', '期限预警', '文书校验', '财物监控', '自定义期限', '数据大盘'], locked: true }
+  { role: '案件管理办公室', menus: ['工作台', '案件管理', '期限预警', '文书校验', '财物监控', '自定义期限', '数据大盘'], locked: true },
 
   { role: '院长', menus: ['数据大盘', '权限管理'], locked: false }
 
