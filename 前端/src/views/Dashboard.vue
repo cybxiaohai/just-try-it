@@ -445,22 +445,49 @@ h1 {
   cursor: pointer;
   font: inherit;
   letter-spacing: 0.04em;
-  transition: transform 180ms ease, background 180ms ease, box-shadow 180ms ease;
+  transition: all 180ms ease; /* 统一过渡效果 */
+  font-weight: 500; /* 基础加粗，提升文字可读性 */
 }
 
-.theme-btn:hover,
-.theme-btn.is-active {
+.theme-btn:hover {
   transform: translateY(-1px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
   background: rgba(46, 199, 255, 0.22);
-  border-color: rgba(46, 199, 255, 0.6); /* 新增边框色高亮 */
+  border-color: rgba(46, 199, 255, 0.6);
 }
-/* 补充日间模式（sketch）专属样式 */
-body[data-theme="sketch"] .theme-btn:hover,
+/* 激活态强化：比 hover 更突出 */
+.theme-btn.is-active {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  background: rgba(46, 199, 255, 0.4); /* 加深背景透明度 */
+  border-color: rgba(46, 199, 255, 0.8); /* 强化边框 */
+  color: #ffffff; /* 强制白色文字，避免变量失效 */
+  font-weight: 600; /* 激活态加粗，进一步区分 */
+}
+/* ========== 日间版（sketch）样式重点优化 ========== */
+body[data-theme="sketch"] .theme-btn {
+  border-radius: 6px;
+  background: rgba(255, 251, 243, 0.95);
+  border-color: rgba(63, 72, 96, 0.55);
+  color: #273043; /* 深色文字，提升基础可读性 */
+  font-weight: 500;
+}
+
+/* 日间版 hover：轻微变色，保留交互感 */
+body[data-theme="sketch"] .theme-btn:hover {
+  background: rgba(68, 83, 166, 0.15);
+  border-color: rgba(68, 83, 166, 0.6);
+  color: #273043;
+}
+
+/* 日间版激活态：强对比配色，一眼识别 */
 body[data-theme="sketch"] .theme-btn.is-active {
-  background: rgba(68, 83, 166, 0.3); /* 加深日间模式hover背景 */
-  border-color: rgba(68, 83, 166, 0.8); /* 日间模式边框高亮 */
-  box-shadow: 0 4px 12px rgba(68, 83, 166, 0.2); /* 适配日间的阴影 */
+  background: #4453a6; /* 深蓝色背景，和浅色界面形成强对比 */
+  border-color: #4453a6; /* 同背景色边框，强化按钮感 */
+  color: #ffffff !important; /* 白色文字，对比度拉满 */
+  box-shadow: 0 4px 12px rgba(68, 83, 166, 0.3); /* 专属阴影，突出层级 */
+  transform: translateY(-1px);
+  font-weight: 600;
 }
 
 /* 移动端适配 */
