@@ -77,6 +77,7 @@ const warnList = computed(() =>
       prosecutor: item.prosecutor
     }))
     .filter((item) => item.remainDay <= 3)
+    .sort((a, b) => a.remainDay - b.remainDay)
 )
 
 const summary = computed(() => ({
