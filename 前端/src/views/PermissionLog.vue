@@ -54,7 +54,7 @@ const permissionRows = ref([
 ])
 
 function mockLog() {
-  caseStore.pushPermissionLog(auth.username || '案管管理员', '查看权限配置并生成日志记录')
+  caseStore.pushPermissionLog(auth.username || '案件管理办公室管理员', '查看权限配置并生成日志记录')
 }
 </script>
 

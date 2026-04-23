@@ -453,7 +453,30 @@ h1 {
   transform: translateY(-1px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
   background: rgba(46, 199, 255, 0.22);
+  border-color: rgba(46, 199, 255, 0.6); /* 新增边框色高亮 */
 }
+/* 补充日间模式（sketch）专属样式 */
+body[data-theme="sketch"] .theme-btn:hover,
+body[data-theme="sketch"] .theme-btn.is-active {
+  background: rgba(68, 83, 166, 0.3); /* 加深日间模式hover背景 */
+  border-color: rgba(68, 83, 166, 0.8); /* 日间模式边框高亮 */
+  box-shadow: 0 4px 12px rgba(68, 83, 166, 0.2); /* 适配日间的阴影 */
+}
+
+/* 移动端适配 */
+@media (max-width: 820px) {
+  .theme-btn {
+    padding: 10px 14px; /* 缩小内边距 */
+    font-size: 14px; /* 缩小字体 */
+    letter-spacing: 0.02em; /* 减小字母间距 */
+  }
+  .theme-btn:hover,
+  .theme-btn.is-active {
+    transform: translateY(-0.5px); /* 减小位移 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 缩小阴影 */
+  }
+}
+
 
 .dashboard {
   display: grid;
