@@ -23,9 +23,11 @@ export const roleDefaultPath = {
 
 export const roleMenus = {
   prosecutor: ['/workbench', '/case/list', '/warn/timeout'],
-  manager: menuCatalog.map((item) => item.key),
-  leader: ['/dashboard']
+  manager: ['/workbench', '/case/list', '/warn/timeout', '/check/document', '/property/monitor', '/rule/config', '/dashboard'],
+  leader: ['/dashboard', '/permission/log']
 }
+
+
 
 export const initialCases = [
   {

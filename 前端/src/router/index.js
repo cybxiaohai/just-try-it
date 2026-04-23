@@ -23,7 +23,8 @@ const routes = [
   { path: '/check/document', component: DocCheck, meta: { roles: ['manager'] } },
   { path: '/property/monitor', component: PropertyMonitor, meta: { roles: ['manager'] } },
   { path: '/rule/config', component: RuleConfig, meta: { roles: ['manager'] } },
-  { path: '/permission/log', component: PermissionLog, meta: { roles: ['manager'] } }
+  { path: '/permission/log', component: PermissionLog, meta: { roles: ['leader'] } }
+
 ]
 
 const router = createRouter({
