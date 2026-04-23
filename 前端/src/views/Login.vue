@@ -17,7 +17,7 @@
         </el-form-item>
         <el-button type="primary" style="width: 100%" @click="submitLogin">登录并进入工作台</el-button>
       </el-form>
-      <p class="tip">角色说明：为了落实保密规则,检察官仅可查看本人办理案件,案件管理办公室可查看全院受理案件,领导可查看本院案件办理数据大盘。</p>
+      <p class="tip">角色说明：为了落实保密规则,检察官仅可查看本人办理案件,案件管理办公室可查看全院受理案件,院长可查看本院案件办理数据大盘。</p>
     </el-card>
   </div>
 </template>

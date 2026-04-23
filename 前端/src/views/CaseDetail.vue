@@ -54,7 +54,7 @@
           <el-select v-model="form.assign.mode" placeholder="分案方式">
             <el-option label="自动轮案" value="自动轮案" />
             <el-option label="指定分案" value="指定分案" />
-            <el-option label="领导交办" value="领导交办" />
+            <el-option label="院长交办" value="院长交办" />
           </el-select>
           <el-select v-model="form.assign.department" placeholder="部门">
             <el-option label="批捕" value="批捕" />

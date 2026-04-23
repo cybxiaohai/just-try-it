@@ -160,11 +160,11 @@ export const initialPropertyRecords = [
 export const initialOperationLogs = [
   { time: '2026-04-17 10:30', user: '李检察官', action: '新增财物记录 J202604001-手机' },
   { time: '2026-04-18 09:10', user: '王检察官', action: '更新财物状态为已移送' },
-  { time: '2026-04-19 15:40', user: '案管管理员', action: '导出期限预警清单' }
+  { time: '2026-04-19 15:40', user: '案件管理办公室管理员', action: '导出期限预警清单' }
 ]
 
 export const initialPermissionLogs = [
-  { time: '2026-04-18 14:20', user: '案管管理员', action: '调整规则引擎参数' },
+  { time: '2026-04-18 14:20', user: '案件管理办公室管理员', action: '调整规则引擎参数' },
   { time: '2026-04-19 08:55', user: '李检察官', action: '查看案件详情 J202604001' },
   { time: '2026-04-19 16:33', user: '系统', action: '触发红色超期预警 1 件' }
 ]
